@@ -1,8 +1,9 @@
 # Deep Thoughts
 MERN (MongoDB, Express.js, React, and Node.js) tech stack.
 
-* `React Router` recently upgraded to version 6 (Links to an external site.) which is incompatible with older versions. When following allow with the module lesson, be sure to install React Router version 5 using this command: npm install react-router-dom@5.
-* alternative authentication solution known as a JSON Web Token, or JWT
+npm install react-router-dom@5
+
+A social media application where users can share their thoughts and opinions about anything that moves them. They will be able to befriend one another and comment on each other's posts.
 
 
 ## What You Will Learn
