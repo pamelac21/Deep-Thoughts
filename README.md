@@ -5,6 +5,13 @@ npm install react-router-dom@5
 
 A social media application where users can share their thoughts and opinions about anything that moves them. They will be able to befriend one another and comment on each other's posts.
 
+`A user can sign up and log in to the application.`
+
+`A user can post their thoughts and view other user's thoughts.`
+
+`A user can react, or reply, to a thought.`
+
+`A user can befriend other users.`
 
 ## What You Will Learn
 By completing this module, you'll learn how to do the following:
