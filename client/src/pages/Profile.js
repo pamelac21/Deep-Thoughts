@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
 import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
@@ -20,9 +20,9 @@ const Profile = () => {
 
   const user = data?.me || data?.user || {};
 
-  // redirect to personal profile page if username is the logged-in user's
+  // Navigate to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Redirect to="/profile" />;
+    return <Navigate to="/profile" />;
   }
 
   if (loading) {
@@ -64,7 +64,9 @@ const Profile = () => {
 
       <div className="flex-row justify-space-between mb-3">
         <div className="col-12 mb-3 col-lg-8">
-          <ThoughtList thoughts={user.thoughts} title={`${user.username}'s thoughts...`} />
+          <ThoughtList 
+            thoughts={user.thoughts}
+            title={`${user.username}'s thoughts...`} />
         </div>
 
         <div className="col-12 col-lg-3 mb-3">
