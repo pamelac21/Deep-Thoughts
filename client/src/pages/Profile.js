@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, useParams } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
 
 import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
@@ -20,9 +20,9 @@ const Profile = () => {
 
   const user = data?.me || data?.user || {};
 
-  // Navigate to personal profile page if username is yours
+  // Redirect to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Navigate to="/profile" />;
+    return <Redirect to="/profile" />;
   }
 
   if (loading) {
