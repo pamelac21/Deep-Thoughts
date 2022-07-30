@@ -1,8 +1,6 @@
 # Deep Thoughts
 MERN (MongoDB, Express.js, React, and Node.js) tech stack.
 
-npm install react-router-dom@5
-
 A social media application where users can share their thoughts and opinions about anything that moves them. They will be able to befriend one another and comment on each other's posts.
 
 `A user can sign up and log in to the application.`
@@ -12,6 +10,10 @@ A social media application where users can share their thoughts and opinions abo
 `A user can react, or reply, to a thought.`
 
 `A user can befriend other users.`
+
+## Deployed App
+https://afternoon-everglades-19500.herokuapp.com/
+
 
 ## What You Will Learn
 By completing this module, you'll learn how to do the following:
